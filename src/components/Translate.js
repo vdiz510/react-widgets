@@ -2,22 +2,10 @@
 import React, { useState } from 'react'
 import Dropdown from './Dropdown'
 import Convert from './Convert'
+import { languages } from '../languages'
 
 // language options
-const options = [
-  {
-    label: 'Afrikaans',
-    value: 'af'
-  },
-  {
-    label: 'Arabic',
-    value: 'ar'
-  },
-  {
-    label: 'Hindi',
-    value: 'hi'
-  }
-]
+const options = languages
 
 const Translate = () => {
   const [language, setLanguage] = useState(options[0])
